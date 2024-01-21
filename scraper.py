@@ -60,7 +60,7 @@ class flipkart_scraper:
         for index,product in enumerate(products):
             product_dict={}
             img_src=product.find("div",class_="CXW8mj").img["src"]
-            st.write(img_src)
+            st.write(img_src,"img_src")
             title=product.find("div",class_="_4rR01T").text
             price_data=product.find("div",class_="_25b18c")
             if price_data!=None:
@@ -90,7 +90,7 @@ class flipkart_scraper:
         for index,product in enumerate(products):
             product_dict={}
             img_src=product.find("div",class_="CXW8mj").img["src"]
-            st.write(img_src)
+            st.write(img_src,"img_src")
             price_data=product.find("div",class_="_25b18c").find_all("div",recursive=False)
             
             curr_price=price_data[0].text
