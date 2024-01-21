@@ -188,10 +188,10 @@ def perform(product_text):
     st.write(dicty1["product_1"])
 
 
-    croma=croma_scrapper()
-    dicty=croma.get_description(product_text)
-    # print(dicty)
-    st.write(dicty["product_1"])
+    # croma=croma_scrapper()
+    # dicty=croma.get_description(product_text)
+    # # print(dicty)
+    # st.write(dicty["product_1"])
 
 product_text=st.text_input(label="product")
 st.button(label="run",on_click=lambda:perform(product_text))
